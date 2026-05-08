@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, app
 from flask_cors import CORS
 from .config import Config
 from .models import db
@@ -11,7 +11,8 @@ def create_app():
     db.init_app(app)
 
     allowed_origins = os.environ.get("ALLOWED_ORIGINS", "*")
-    CORS(app, origins=allowed_origins)
+    origins_list = [o.strip() for o in allowed_origins.split(",")]
+    CORS(app, origins=origins_list)
 
     from .routes.orders import orders_bp
     from .routes.fleet import fleet_bp
