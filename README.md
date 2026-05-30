@@ -22,13 +22,13 @@ A **Smart Traffic-Based Delivery Scheduling System** that accepts delivery order
 
 | Layer | Technology |
 |---|---|
-| Frontend --> React (Vite) + Custom Dark CSS |
-| Backend --> Flask + SQLAlchemy |
-| Database --> PostgreSQL |
-| Geocoding --> Nominatim (OpenStreetMap) |
-| Travel Time --> Haversine via geopy |
-| Map --> Leaflet.js |
-| Hosting --> Render (backend + DB) + Netlify (frontend) |
+| Frontend | React (Vite) + Custom Dark CSS |
+| Backend | Flask + SQLAlchemy |
+| Database | PostgreSQL |
+| Geocoding | Nominatim (OpenStreetMap) |
+| Travel Time | Haversine via geopy |
+| Map | Leaflet.js |
+| Hosting | Render (backend + DB) + Netlify (frontend) |
 
 ---
 
