@@ -5,3 +5,4 @@ psycopg2-binary
 geopy
 python-dotenv
 gunicorn
+sqlalchemy==2.0.40
